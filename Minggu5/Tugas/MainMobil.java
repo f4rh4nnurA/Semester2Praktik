@@ -1,3 +1,4 @@
+package Minggu5.Tugas;
 import java.util.Scanner;
 
 public class MainMobil {

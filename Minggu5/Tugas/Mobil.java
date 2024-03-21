@@ -1,3 +1,4 @@
+package Minggu5.Tugas;
 public class Mobil {
 
     private String merk;
