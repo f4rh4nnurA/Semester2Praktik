@@ -1,4 +1,4 @@
-package Minggu2;
+package tesK;
 
 public class buku11 {
 
@@ -14,7 +14,7 @@ public class buku11 {
     }
 
     void terjual (int jml){
-        stok -= jml;
+        stok -= jml;  
     }
 
     void restock (int jml) {

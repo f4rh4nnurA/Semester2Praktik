@@ -1,4 +1,4 @@
-package Minggu2;
+package tesK;
 
 public class bukuMain11 {
     public static void main(String[] args) {
