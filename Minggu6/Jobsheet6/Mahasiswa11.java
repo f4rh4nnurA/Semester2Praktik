@@ -12,7 +12,7 @@ public class Mahasiswa11 {
         ipk = i;
     }
 
-    void Tampil(){
+    void tampil(){
         System.out.println("Nama = " + nama);
         System.out.println("Tahun Masuk = " + thnMasuk);
         System.out.println("Umur = " + umur);
