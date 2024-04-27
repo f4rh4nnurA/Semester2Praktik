@@ -27,7 +27,7 @@ public class Gudang11 {
         }
     }
 
-    public void tambahBarang (Barang brg){
+    public void tambahBarang (Barang11 brg){
         if (!cekPenuh()) {
             top++;
             tumpukan[top] = brg;
@@ -39,7 +39,7 @@ public class Gudang11 {
 
     public Barang11 ambilBarang(){
         if (!cekKosong()) {
-            Barang delete = tumpukan[top];
+            Barang11 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " diambil dari Gudang.");
             return delete;
@@ -60,7 +60,7 @@ public class Gudang11 {
         }
     }
 
-    public void tampilanBarang(){
+    public void tampilkanBarang(){
         if (!cekKosong()){
             System.out.println("Rincian tumpukan barang di Gudang: ");
             for (int i = 0; i <= top; i++) {

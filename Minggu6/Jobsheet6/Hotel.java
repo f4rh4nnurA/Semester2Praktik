@@ -10,7 +10,5 @@ public class Hotel {
         kota = k;
         harga = h;
         bintang = b;
-    }
-
-    
+    }   
 }
