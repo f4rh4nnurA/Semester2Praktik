@@ -1,11 +1,10 @@
 package Minggu16.Collection;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.Stack;
 
-public class nomor5perc {
+public class nomor5perc2 {
     public static void main(String[] args) {
         Stack<String> fruits = new Stack<>();
         fruits.push("Banana");
