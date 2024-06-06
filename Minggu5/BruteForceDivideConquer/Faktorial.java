@@ -1,4 +1,4 @@
-package Minggu5.BruteForceDivideConquer;
+package Jobsheet4.BruteForceDivideConquer;
 
 public class Faktorial {
     public int nilai;

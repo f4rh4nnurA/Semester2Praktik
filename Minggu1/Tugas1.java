@@ -1,4 +1,4 @@
-import java.util.Scanner;
+fig import java.util.Scanner;
 
 public class Tugas1 {
     static char KODE [] = {'A','B', 'D', 'E', 'F', 'G', 'H', 'L', 'N', 'T'};
