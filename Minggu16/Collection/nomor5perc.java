@@ -1,5 +1,7 @@
 package Minggu16.Collection;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.Stack;
 
@@ -12,6 +14,14 @@ public class nomor5perc {
         fruits.add("Leci");
         fruits.push("Salak");
 
+        fruits.set(fruits.size()-1, "Strawberry");
+
+        fruits.add("Mango");
+        fruits.add("guava");
+        fruits.add("avocado");
+
+        Collections.sort(fruits);
+
         for (String fruit : fruits) {
             System.out.printf("%s ", fruit);
         }
@@ -23,10 +33,8 @@ public class nomor5perc {
         }
 
         fruits.push("Melon");
-        fruits.push("Strawberry");
-        fruits.push("Mango");
-        fruits.push("guava");
-        fruits.push("avocado");
+        fruits.push("Durian");
+        
         System.out.println("");
         for (Iterator<String> it = fruits.iterator(); it.hasNext();) {
             String fruit = it.next();
