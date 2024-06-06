@@ -1,17 +1,21 @@
 package latihanPrak;
 
 public class kerucut {
-    int jari2;
-    int sisiMiring;
+    double jari2;
+    double sisiMiring;
     
-    public kerucut(int r, int sM){
+    public kerucut(double r, double sM){
         jari2 = r;
         sisiMiring = sM;
     }
 
-    double luasPermukaan(int r, int sM){
-        return Math.PI * r * (sM + r);
+    double luasPermukaan(){
+        return Math.PI * jari2 * (sisiMiring + jari2);
     }
 
-    
+    double volume (){
+        double t = Math.sqrt(Math.pow(jari2, 2) + Math.pow(sisiMiring, 2));
+        return 1/3 * Math.PI * Math.pow(jari2,2) * t;
+    }
+
 }
