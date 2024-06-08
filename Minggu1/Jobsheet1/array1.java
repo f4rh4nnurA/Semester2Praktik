@@ -1,0 +1,65 @@
+package Jobsheet1;
+
+import java.util.Scanner;
+
+public class array1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner (System.in);
+        double nilai [] = new double [8];
+        String matKul[] = {"Pancasila", "Konsep Teknologi Informasi", "Critical Thinking and Problem Solving", "Matematika Dasar", 
+        "Bahasa Inggris","Dasar Pemrograman", "Praktikum Dasar Pemrograman", "Keselamatan dan Kesehatan Kerja"};
+        double IP [] = new double[8];
+        String huruf [] = new String[8];
+        System.out.println("=======================");
+        System.out.println("Program Menghitung IP Semester");
+        System.out.println("=======================");
+        double totalIp = 0;
+
+        for (int i = 0; i < 8; i++) {
+            System.out.printf("\nMasukkan nilai Angka untuk MK %s : ", matKul[i]);
+            nilai [i] = scan.nextInt();
+            if (nilai [i] > 80 && nilai [i] <= 100) {
+                IP [i] = 4.00;
+                huruf [i] = "A"; 
+            } else if (nilai [i] > 73) {
+                IP [i] = 3.50;
+                huruf [i] = "B+";
+            } else if (nilai [i] > 65) {
+                IP [i] = 3;
+                huruf [i]  = "B";
+            } else if (nilai [i] > 60) {
+                IP [i] = 2.50;
+                huruf [i]= "C+";
+            } else if (nilai [i] > 50) {
+                IP [i] = 2.00;
+                huruf [i] = "C";
+            } else if (nilai [i] > 39) {
+                IP [i] = 1.00;
+                huruf [i] = "D";
+            } else if (nilai [i] <=39 && nilai [i] > 0) {
+                IP [i] = 0.00;
+                huruf [i] = "E";
+            }
+            totalIp += IP[i];
+        }
+        System.out.println("======================");
+        System.out.println("Hasil Konversi Nilai");
+        System.out.println("======================");
+        System.out.println("MK\t\t\t\t\t\t\tNilai Angka\t\tNilai Huruf\t\tBobot Nilai" );
+        System.out.println(matKul[0] + "\t\t\t\t\t\t"  + nilai[0] + "\t\t\t     " + huruf[0] + "\t\t\t" + IP[0]);
+        System.out.println(matKul[1] + "\t\t\t\t"      + nilai[1] + "\t\t\t     " + huruf[1] + "\t\t\t" + IP[1]);
+        System.out.println(matKul[2] + "\t\t\t"        + nilai[2] + "\t\t\t     " + huruf[2] + "\t\t\t" + IP[2]);
+        System.out.println(matKul[3] + "\t\t\t\t\t"    + nilai[3] + "\t\t\t     " + huruf[3] + "\t\t\t" + IP[3]);
+        System.out.println(matKul[4] + "\t\t\t\t\t\t"  + nilai[4] + "\t\t\t     " + huruf[4] + "\t\t\t" + IP[4]);
+        System.out.println(matKul[5] + "\t\t\t\t\t"    + nilai[5] + "\t\t\t     " + huruf[5] + "\t\t\t" + IP[5]);
+        System.out.println(matKul[6] + "\t\t\t\t"      + nilai[6] + "\t\t\t     " + huruf[6] + "\t\t\t" + IP[6]);
+        System.out.println(matKul[7] + "\t\t\t\t"      + nilai[7] + "\t\t\t     " + huruf[7] + "\t\t\t" + IP[7]);
+        System.out.println("======================");
+        
+        double ipk = totalIp / IP.length;
+        System.out.println("IP :   " + ipk);
+
+        scan.close();
+    }
+}
+
