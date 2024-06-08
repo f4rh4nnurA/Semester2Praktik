@@ -1,4 +1,4 @@
-package Jobsheet4.BruteForceDivideConquer;
+package Minggu5.BruteForceDivideConquer;
 
 import java.util.Scanner;
 
