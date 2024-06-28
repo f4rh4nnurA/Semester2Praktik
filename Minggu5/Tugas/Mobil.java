@@ -1,25 +1,30 @@
 package Minggu5.Tugas;
 
 public class Mobil {
-    int[] kecepatan;
-    String[] mobil;
-    int low;
-    int high;
-    int med;
+    int acceleration[];
+    String names[];
+    int max;
+    int min;
+    String name;
+    Mobil(int Mspeed [], String name[]){
+        this.acceleration = Mspeed;
+        this.names = name; 
+        this.max = max;
+        this.min = min;
+    } 
 
-    Mobil (int[] top_acceleration, String[] merk) {
-        this.kecepatan = top_acceleration;
-        this.mobil = merk;
+    Mobil findMaxWithBF(int acceleration[], String names[]) {
+        max = acceleration[0];
+        for (int i = 1; i < acceleration.length; i++) {
+            if (acceleration[i] > max) {
+                max = acceleration[i];
+                name = names[i];
+            }
+        }
+        return new Mobil(acceleration, names);
     }
 
-    int temukanMax ( int [] arr, int low, int high, String [] cars){
-        low = 0;
-        if (low == high) {
-            return high;
-        }
-        int mid = (low + high) / 2;
-        int kiri = temukanMax(arr, cars, low, med);
-        int kanan = temukanMax(arr, cars, med + 1, arr.length - 1);
-        return Math.;
+    Mobil findMaxWithDC(int acceleration[], S){
+        
     }
 }
