@@ -5,7 +5,7 @@ public class Faktorial {
     int faktorialBF(int n) {
         int fakto = 1;
         for (int i = 2; i <= n; i++) {
-            fakto *=-i;
+            fakto *= i;
         }
         return fakto;
     }
