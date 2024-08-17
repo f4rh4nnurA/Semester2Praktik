@@ -35,7 +35,7 @@ public class daftarMahasiswaBerprestasi {
     void selectionSort() {
         for (int i = 0; i < listMhs.length - 1; i++) {
             int idxMin = i;
-            for (int j = i + 1; j < listMhs.length; j++) {
+            for (int j = 0; j < listMhs.length; j++) {
                 if (listMhs[j].ipk < listMhs[idxMin].ipk) {
                     idxMin = j;
                 }
